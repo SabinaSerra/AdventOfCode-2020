@@ -1,6 +1,3 @@
-import os
-import argparse
-import time 
 import utils as utils
 
 def get_letter(password: str, ind: int):
