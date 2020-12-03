@@ -3,8 +3,8 @@ import time
 
 def init(input_type="str"):
     parser = argparse.ArgumentParser()
-    parser.add_argument('--input', "-i", type=str, required=True, help="")
-    parser.add_argument('--part', "-p", type=int, required=True, choices=[1, 2,], help="")
+    parser.add_argument('--input', "-i", type=str, required=True, help="The input txt-file")
+    parser.add_argument('--part', "-p", type=int, required=True, choices=[1, 2,], help="The problem to solve")
     args = parser.parse_args()
     txt_file = args.input
     if input_type == "int":
